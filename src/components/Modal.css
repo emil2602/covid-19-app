@@ -1,0 +1,59 @@
+.modal-window{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0, 0.4);
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1);
+}
+.modal-window__content{
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #fff;
+  width: 500px;
+  height: 300px;
+  text-align: center;
+}
+.modal-hide{
+  transform: scale(0);
+}
+.confirmed::before{
+  content: url('../assets/Confirmed.png');
+  flex: 0 10%;
+}
+.recovered::before{
+  content: url('../assets/Recovered.png');
+  flex: 0 10%;
+}
+.deaths::before{
+  content: url('../assets/Deaths.png');
+  flex: 0 10%;
+}
+.modal-window-list__item{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-left: -520px;
+  color: #666666;
+  font-size: 1.1rem;
+  text-align: left;
+  flex: 1 50%;
+}
+.modal-window-list__item_title{
+  flex: 1 20%;
+}
+.modal-window-btn{
+  padding: 5px 55px;
+  margin-top: 20px;
+  background-color: #2196F3;
+  border-color: transparent;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
